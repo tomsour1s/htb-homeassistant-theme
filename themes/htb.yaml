@@ -1,0 +1,418 @@
+# Hack The Box Theme for Home Assistant
+# Converted from VS Code HTB Theme
+# Features both light and dark modes based on the original HTB color palette
+
+HTB:
+  # ============================================
+  # HTB COLOR PALETTE (Reference)
+  # ============================================
+  # Primary Green (Accent):  #9fef00
+  # Bright Green:            #c5f467
+  # Dark Background:         #1a2332
+  # Darker Background:       #111927
+  # Darkest Background:      #141d2b
+  # Primary Text:            #a4b1cd
+  # Muted Text:              #6e7b96
+  # Border/Selection:        #313f55
+  # Red/Error:               #ff3e3e / #ff8484
+  # Blue:                    #004cff / #5cb2ff
+  # Cyan:                    #2ee7b6 / #5cecc6
+  # Yellow:                  #ffaf00 / #ffcc5c
+  # Magenta:                 #9f00ff / #c16cfa / #cf8dfb
+  # White:                   #ffffff
+
+  # ============================================
+  # MODES CONFIGURATION
+  # ============================================
+  modes:
+    light:
+      # Main Interface Colors
+      primary-color: "#9fef00"
+      accent-color: "#2ee7b6"
+      dark-primary-color: "#7bc700"
+      light-primary-color: "#c5f467"
+
+      # Background Colors
+      primary-background-color: "#f0f2f5"
+      secondary-background-color: "#e5e8ed"
+      card-background-color: "#ffffff"
+      clear-background-color: "#ffffff"
+
+      # Text Colors
+      primary-text-color: "#1a2332"
+      secondary-text-color: "#313f55"
+      text-primary-color: "#1a2332"
+      disabled-text-color: "#6e7b96"
+
+      # Dividers and Outlines
+      divider-color: "rgba(26, 35, 50, 0.12)"
+      outline-color: "rgba(26, 35, 50, 0.12)"
+      outline-hover-color: "rgba(26, 35, 50, 0.24)"
+
+      # Sidebar
+      sidebar-background-color: "#1a2332"
+      sidebar-text-color: "#a4b1cd"
+      sidebar-icon-color: "#6e7b96"
+      sidebar-selected-text-color: "#9fef00"
+      sidebar-selected-icon-color: "#9fef00"
+      sidebar-selected-background-color: "rgba(159, 239, 0, 0.1)"
+
+      # Header
+      app-header-background-color: "#1a2332"
+      app-header-text-color: "#a4b1cd"
+
+      # State Colors
+      state-icon-color: "#313f55"
+      state-icon-active-color: "#9fef00"
+      state-icon-unavailable-color: "#6e7b96"
+
+      # Switch
+      switch-checked-color: "#9fef00"
+      switch-unchecked-color: "#6e7b96"
+      switch-checked-button-color: "#ffffff"
+      switch-unchecked-button-color: "#ffffff"
+      switch-checked-track-color: "#9fef00"
+      switch-unchecked-track-color: "#6e7b96"
+
+      # Slider
+      slider-color: "#9fef00"
+      slider-secondary-color: "#c5f467"
+      slider-track-color: "#e5e8ed"
+
+      # Input Components
+      input-fill-color: "#f0f2f5"
+      input-disabled-fill-color: "#e5e8ed"
+      input-ink-color: "#1a2332"
+      input-label-ink-color: "#313f55"
+      input-disabled-ink-color: "#6e7b96"
+      input-idle-line-color: "rgba(26, 35, 50, 0.42)"
+      input-hover-line-color: "rgba(26, 35, 50, 0.87)"
+
+      # Scrollbar
+      scrollbar-thumb-color: "#6e7b96"
+
+      # Error/Warning/Success/Info
+      error-color: "#ff3e3e"
+      warning-color: "#ffaf00"
+      success-color: "#9fef00"
+      info-color: "#5cb2ff"
+
+      # Table Colors
+      table-header-background-color: "#e5e8ed"
+      table-row-background-color: "#f0f2f5"
+      table-row-alternative-background-color: "#ffffff"
+      data-table-background-color: "#ffffff"
+
+      # Label Badge
+      label-badge-background-color: "#ffffff"
+      label-badge-text-color: "#1a2332"
+      label-badge-red: "#ff3e3e"
+      label-badge-blue: "#5cb2ff"
+      label-badge-green: "#9fef00"
+      label-badge-yellow: "#ffaf00"
+      label-badge-grey: "#6e7b96"
+
+      # RGB Values
+      rgb-primary-color: 159, 239, 0
+      rgb-accent-color: 46, 231, 182
+      rgb-primary-text-color: 26, 35, 50
+      rgb-secondary-text-color: 49, 63, 85
+      rgb-text-primary-color: 26, 35, 50
+      rgb-card-background-color: 255, 255, 255
+
+      # Card Styling
+      ha-card-border-radius: "8px"
+      ha-card-box-shadow: "0 2px 8px rgba(26, 35, 50, 0.08)"
+
+      # Markdown
+      markdown-code-background-color: "#e5e8ed"
+
+      # Chip Colors
+      chip-background-color: "rgba(26, 35, 50, 0.08)"
+      ha-assist-chip-filled-container-color: "rgba(26, 35, 50, 0.08)"
+      ha-assist-chip-active-container-color: "rgba(159, 239, 0, 0.15)"
+
+    dark:
+      # Main Interface Colors
+      primary-color: "#9fef00"
+      accent-color: "#2ee7b6"
+      dark-primary-color: "#7bc700"
+      light-primary-color: "#c5f467"
+
+      # Background Colors
+      primary-background-color: "#111927"
+      secondary-background-color: "#141d2b"
+      card-background-color: "#1a2332"
+      clear-background-color: "#111927"
+
+      # Text Colors
+      primary-text-color: "#a4b1cd"
+      secondary-text-color: "#6e7b96"
+      text-primary-color: "#111927"
+      disabled-text-color: "#313f55"
+
+      # Dividers and Outlines
+      divider-color: "rgba(164, 177, 205, 0.12)"
+      outline-color: "#313f55"
+      outline-hover-color: "rgba(164, 177, 205, 0.24)"
+
+      # Sidebar
+      sidebar-background-color: "#1a2332"
+      sidebar-text-color: "#a4b1cd"
+      sidebar-icon-color: "#6e7b96"
+      sidebar-selected-text-color: "#9fef00"
+      sidebar-selected-icon-color: "#9fef00"
+      sidebar-selected-background-color: "rgba(159, 239, 0, 0.1)"
+
+      # Header
+      app-header-background-color: "#1a2332"
+      app-header-text-color: "#a4b1cd"
+
+      # State Colors
+      state-icon-color: "#a4b1cd"
+      state-icon-active-color: "#9fef00"
+      state-icon-unavailable-color: "#313f55"
+
+      # Switch
+      switch-checked-color: "#9fef00"
+      switch-unchecked-color: "#6e7b96"
+      switch-checked-button-color: "#111927"
+      switch-unchecked-button-color: "#1a2332"
+      switch-checked-track-color: "#9fef00"
+      switch-unchecked-track-color: "#313f55"
+
+      # Slider
+      slider-color: "#9fef00"
+      slider-secondary-color: "#c5f467"
+      slider-track-color: "#313f55"
+
+      # Input Components
+      input-fill-color: "rgba(255, 255, 255, 0.05)"
+      input-disabled-fill-color: "rgba(255, 255, 255, 0.02)"
+      input-ink-color: "#a4b1cd"
+      input-label-ink-color: "#6e7b96"
+      input-disabled-ink-color: "#313f55"
+      input-idle-line-color: "rgba(164, 177, 205, 0.42)"
+      input-hover-line-color: "rgba(164, 177, 205, 0.87)"
+      input-disabled-line-color: "rgba(164, 177, 205, 0.06)"
+      input-outlined-idle-border-color: "rgba(164, 177, 205, 0.38)"
+      input-outlined-hover-border-color: "rgba(164, 177, 205, 0.87)"
+      input-outlined-disabled-border-color: "rgba(164, 177, 205, 0.06)"
+      input-dropdown-icon-color: "#6e7b96"
+
+      # Scrollbar
+      scrollbar-thumb-color: "#313f55"
+
+      # Error/Warning/Success/Info
+      error-color: "#ff3e3e"
+      warning-color: "#ffaf00"
+      success-color: "#9fef00"
+      info-color: "#5cb2ff"
+
+      # Table Colors
+      table-header-background-color: "#141d2b"
+      table-row-background-color: "#1a2332"
+      table-row-alternative-background-color: "#141d2b"
+      data-table-background-color: "#1a2332"
+
+      # Label Badge
+      label-badge-background-color: "#1a2332"
+      label-badge-text-color: "#a4b1cd"
+      label-badge-red: "#ff8484"
+      label-badge-blue: "#5cb2ff"
+      label-badge-green: "#9fef00"
+      label-badge-yellow: "#ffcc5c"
+      label-badge-grey: "#6e7b96"
+
+      # RGB Values
+      rgb-primary-color: 159, 239, 0
+      rgb-accent-color: 46, 231, 182
+      rgb-primary-text-color: 164, 177, 205
+      rgb-secondary-text-color: 110, 123, 150
+      rgb-text-primary-color: 17, 25, 39
+      rgb-card-background-color: 26, 35, 50
+
+      # Card Styling
+      ha-card-border-radius: "8px"
+      ha-card-box-shadow: "0 2px 8px rgba(0, 0, 0, 0.3)"
+
+      # Markdown
+      markdown-code-background-color: "#141d2b"
+
+      # Chip Colors
+      chip-background-color: "rgba(164, 177, 205, 0.15)"
+      ha-assist-chip-filled-container-color: "rgba(164, 177, 205, 0.15)"
+      ha-assist-chip-active-container-color: "rgba(159, 239, 0, 0.15)"
+
+      # MDC Ripple
+      mdc-ripple-color: "#6e7b96"
+
+      # Map Filter (for dark mode maps)
+      map-filter: "invert(0.9) hue-rotate(170deg) brightness(1.5) contrast(1.2) saturate(0.3)"
+
+  # ============================================
+  # STATE DOMAIN COLORS (Shared)
+  # ============================================
+  # Alarm Control Panel
+  state-alarm_control_panel-armed_away-color: "#9fef00"
+  state-alarm_control_panel-armed_home-color: "#9fef00"
+  state-alarm_control_panel-armed_night-color: "#9fef00"
+  state-alarm_control_panel-armed_vacation-color: "#9fef00"
+  state-alarm_control_panel-armed_custom_bypass-color: "#9fef00"
+  state-alarm_control_panel-arming-color: "#ffaf00"
+  state-alarm_control_panel-disarming-color: "#ffaf00"
+  state-alarm_control_panel-pending-color: "#ffaf00"
+  state-alarm_control_panel-triggered-color: "#ff3e3e"
+
+  # Alert
+  state-alert-off-color: "#ffaf00"
+  state-alert-on-color: "#ff3e3e"
+
+  # Binary Sensor
+  state-binary_sensor-active-color: "#9fef00"
+  state-binary_sensor-battery-on-color: "#ff3e3e"
+  state-binary_sensor-carbon_monoxide-on-color: "#ff3e3e"
+  state-binary_sensor-gas-on-color: "#ff3e3e"
+  state-binary_sensor-heat-on-color: "#ff3e3e"
+  state-binary_sensor-lock-on-color: "#ff3e3e"
+  state-binary_sensor-moisture-on-color: "#ff3e3e"
+  state-binary_sensor-problem-on-color: "#ff3e3e"
+  state-binary_sensor-safety-on-color: "#ff3e3e"
+  state-binary_sensor-smoke-on-color: "#ff3e3e"
+  state-binary_sensor-sound-on-color: "#ff3e3e"
+  state-binary_sensor-tamper-on-color: "#ff3e3e"
+
+  # Climate
+  state-climate-auto-color: "#9fef00"
+  state-climate-cool-color: "#5cb2ff"
+  state-climate-dry-color: "#ffaf00"
+  state-climate-fan_only-color: "#2ee7b6"
+  state-climate-heat-color: "#ff8484"
+  state-climate-heat-cool-color: "#c5f467"
+
+  # Cover
+  state-cover-active-color: "#cf8dfb"
+
+  # Device Tracker / Person
+  state-device_tracker-active-color: "#5cb2ff"
+  state-device_tracker-home-color: "#9fef00"
+  state-person-active-color: "#5cb2ff"
+  state-person-home-color: "#9fef00"
+
+  # Fan
+  state-fan-active-color: "#2ee7b6"
+
+  # Humidifier
+  state-humidifier-on-color: "#5cb2ff"
+
+  # Light
+  state-light-active-color: "#ffcc5c"
+
+  # Lock
+  state-lock-jammed-color: "#ff3e3e"
+  state-lock-locked-color: "#9fef00"
+  state-lock-locking-color: "#ffaf00"
+  state-lock-unlocked-color: "#ff3e3e"
+  state-lock-unlocking-color: "#ffaf00"
+  state-lock-open-color: "#ff3e3e"
+  state-lock-opening-color: "#ffaf00"
+
+  # Media Player
+  state-media_player-active-color: "#5cb2ff"
+
+  # Plant
+  state-plant-active-color: "#ff3e3e"
+
+  # Siren
+  state-siren-active-color: "#ff3e3e"
+
+  # Sun
+  state-sun-above_horizon-color: "#ffcc5c"
+  state-sun-below_horizon-color: "#004cff"
+
+  # Switch
+  state-switch-active-color: "#9fef00"
+
+  # Update
+  state-update-active-color: "#ffaf00"
+
+  # Vacuum
+  state-vacuum-active-color: "#2ee7b6"
+
+  # Valve
+  state-valve-active-color: "#5cb2ff"
+
+  # Sensor Battery
+  state-sensor-battery-high-color: "#9fef00"
+  state-sensor-battery-low-color: "#ff3e3e"
+  state-sensor-battery-medium-color: "#ffaf00"
+
+  # Water Heater
+  state-water_heater-eco-color: "#9fef00"
+  state-water_heater-electric-color: "#ffaf00"
+  state-water_heater-gas-color: "#ffaf00"
+  state-water_heater-heat_pump-color: "#ffaf00"
+  state-water_heater-high_demand-color: "#ff8484"
+  state-water_heater-performance-color: "#ff8484"
+
+  # State Active/Inactive
+  state-active-color: "#9fef00"
+  state-inactive-color: "#6e7b96"
+  state-unavailable-color: "#313f55"
+
+  # ============================================
+  # ENERGY COLORS
+  # ============================================
+  energy-grid-consumption-color: "#5cb2ff"
+  energy-grid-return-color: "#cf8dfb"
+  energy-solar-color: "#ffcc5c"
+  energy-non-fossil-color: "#9fef00"
+  energy-battery-out-color: "#2ee7b6"
+  energy-battery-in-color: "#ff8484"
+  energy-gas-color: "#ff3e3e"
+  energy-water-color: "#5cecc6"
+
+  # ============================================
+  # COLOR PALETTE (Custom Variables)
+  # ============================================
+  red-color: "#ff3e3e"
+  pink-color: "#ff8484"
+  purple-color: "#cf8dfb"
+  deep-purple-color: "#9f00ff"
+  indigo-color: "#004cff"
+  blue-color: "#5cb2ff"
+  light-blue-color: "#5cb2ff"
+  cyan-color: "#2ee7b6"
+  teal-color: "#5cecc6"
+  green-color: "#9fef00"
+  light-green-color: "#c5f467"
+  lime-color: "#c5f467"
+  yellow-color: "#ffcc5c"
+  amber-color: "#ffaf00"
+  orange-color: "#ffaf00"
+  deep-orange-color: "#ff8484"
+  brown-color: "#6e7b96"
+  grey-color: "#6e7b96"
+  light-grey-color: "#a4b1cd"
+  dark-grey-color: "#313f55"
+  blue-grey-color: "#6e7b96"
+  black-color: "#111927"
+  white-color: "#ffffff"
+
+  # ============================================
+  # GRAPH COLORS
+  # ============================================
+  graph-color-1: "#9fef00"
+  graph-color-2: "#5cb2ff"
+  graph-color-3: "#ff8484"
+  graph-color-4: "#ffcc5c"
+  graph-color-5: "#2ee7b6"
+  graph-color-6: "#cf8dfb"
+  graph-color-7: "#5cecc6"
+  graph-color-8: "#ffaf00"
+  graph-color-9: "#c5f467"
+  graph-color-10: "#c16cfa"
+
+  # History Colors
+  history-unavailable-color: "transparent"
+  history-unknown-color: "#313f55"
